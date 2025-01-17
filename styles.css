@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/banner.jpg");
+  background-size: cover; /* Adjusts the image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-content button {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  color: white;
+  background-color: black;
+  font-weight: 800;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: gray;
+  text-decoration: underline;
+}
+
+header img {
+  display: none;
+}
+
+header img {
+  width: 10%;
+}
+
+@media (max-width: 768px) {
+  header img {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero-content button {
+    font-size: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 35px;
+  }
+}
