@@ -73,9 +73,30 @@ header img {
   width: 10%;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px;
+}
+
+.speakers h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hero-content button:hover {
   color: black;
   background-color: white;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%; /* or max-height: 100% if you want to control the height */
 }
 
 .about img {
@@ -96,6 +117,12 @@ header img {
 .about p {
   width: 50%;
   text-align: center;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {
