@@ -134,6 +134,45 @@ header img {
   font-weight: 500;
 }
 
+.schedule h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schedule div img {
+  max-width: 40%;
+}
+
+.event {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid blue;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.eventText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  padding: 2%;
+}
+
+.eventText p {
+  font-size: 25px;
+}
+
 @media (max-width: 768px) {
   header img {
     display: block;
@@ -156,6 +195,26 @@ header img {
 
   .about img {
     width: 80%;
+  }
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .schedule div img {
+    max-width: 100%;
   }
 }
 
